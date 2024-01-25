@@ -15,3 +15,24 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+# create my shopping list & friend's shopping list
+my_list = ["milk", "eggs", "bacon"]
+friend_list =["beer", "cookies", "eggs"]
+
+#combined list 
+combined_list = my_list + friend_list
+
+#store the list, sorted
+stored_list = combined_list.sort 
+
+#puts only unique items
+unique_list = stored_list.uniq
+
+#write the list to the screen and each element preceeded with "buy"
+puts "Buy #{unique_list[0]}"
+puts "Buy #{unique_list[1]}"
+puts "Buy #{unique_list[2]}"
+puts "Buy #{unique_list[3]}"
+puts "Buy #{unique_list[4]}"
+# puts combined_list.unshift("buy").uniq
